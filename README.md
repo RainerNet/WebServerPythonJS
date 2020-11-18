@@ -7,4 +7,10 @@ decompiler together to produce an always-updating product.
 ## Building from source
 
 ```bash
-mkdi
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ../
+cmake --build .
+```
+
+The client binary should be loca
