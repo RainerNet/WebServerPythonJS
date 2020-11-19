@@ -13,4 +13,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ../
 cmake --build .
 ```
 
-The client binary should be loca
+The client binary should be located in `build/client/md-client(.exe)`. The
+server binary should be located in `build/server/md-server(.exe)`.
+
+## Run
