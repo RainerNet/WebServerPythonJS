@@ -16,4 +16,9 @@ cmake --build .
 The client binary should be located in `build/client/md-client(.exe)`. The
 server binary should be located in `build/server/md-server(.exe)`.
 
-## Run
+## Running the client
+
+The default, community integration server credentials are as follows
+
+```
+communit
