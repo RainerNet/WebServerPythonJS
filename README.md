@@ -31,4 +31,5 @@ _TDB_
 ## Included Works
 
 This software utilizes [dear imgui](https://github.com/ocornut/imgui), which is
-also licensed under the MIT license. As this is the same
+also licensed under the MIT license. As this is the same license this software
+is released under, we have not included an additional copy of the MIT lice
