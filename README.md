@@ -21,4 +21,13 @@ server binary should be located in `build/server/md-server(.exe)`.
 The default, community integration server credentials are as follows
 
 ```
-communit
+community.hostname.tld
+```
+
+## Running the server
+
+_TDB_
+
+## Included Works
+
+This software utilizes [dear imgui](https://gi
