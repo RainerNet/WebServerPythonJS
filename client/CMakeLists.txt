@@ -8,4 +8,8 @@ set(CMAKE_CXX_STANDARD 14)
 set(SOURCES
     src/main.cc
     src/machine_decompiler.cc
-    src/data/b
+    src/data/binary.cc
+    src/data/log_output.cc
+    src/data/hexdump_cache.cc
+    src/ui/manager.cc
+    src/ui/
