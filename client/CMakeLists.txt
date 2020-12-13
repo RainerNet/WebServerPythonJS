@@ -12,4 +12,9 @@ set(SOURCES
     src/data/log_output.cc
     src/data/hexdump_cache.cc
     src/ui/manager.cc
-    src/ui/
+    src/ui/element.cc
+    src/ui/window.cc
+    src/ui/modal.cc
+    src/ui/ribbon.cc
+    src/ui/functions_window.cc
+    src/ui/s
