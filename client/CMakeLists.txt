@@ -20,4 +20,10 @@ set(SOURCES
     src/ui/strings_window.cc
     src/ui/disasm_window.cc
     src/ui/hexdump_window.cc
-    src/ui/conso
+    src/ui/console_window.cc
+    src/ui/flow_graph_window.cc
+    src/ui/open_file_modal.cc
+    src/ui/about_modal.cc
+    )
+
+# Get the cu
