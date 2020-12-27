@@ -30,4 +30,7 @@ set(SOURCES
 find_package(Git)
 if (GIT_FOUND)
   message("Found git ${GIT_EXECUTABLE}")
-endif(GIT_FOU
+endif(GIT_FOUND)
+message(${CMAKE_CURRENT_SOURCE_DIR})
+execute_process(
+    COMMAND "\"${GIT_EXECUTABLE}\" r
