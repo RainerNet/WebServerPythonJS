@@ -17,4 +17,7 @@ set(SOURCES
     src/ui/modal.cc
     src/ui/ribbon.cc
     src/ui/functions_window.cc
-    src/ui/s
+    src/ui/strings_window.cc
+    src/ui/disasm_window.cc
+    src/ui/hexdump_window.cc
+    src/ui/conso
