@@ -26,4 +26,8 @@ set(SOURCES
     src/ui/about_modal.cc
     )
 
-# Get the cu
+# Get the current branch we're building
+find_package(Git)
+if (GIT_FOUND)
+  message("Found git ${GIT_EXECUTABLE}")
+endif(GIT_FOU
