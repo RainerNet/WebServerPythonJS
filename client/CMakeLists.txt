@@ -33,4 +33,8 @@ if (GIT_FOUND)
 endif(GIT_FOUND)
 message(${CMAKE_CURRENT_SOURCE_DIR})
 execute_process(
-    COMMAND "\"${GIT_EXECUTABLE}\" r
+    COMMAND "\"${GIT_EXECUTABLE}\" rev-parse --abbrev-ref HEAD -- | head -n1"
+    RESULT_VARIABLE RESULT
+    OUTPUT_VARIABLE MD_BRANCH
+    )
+if (
