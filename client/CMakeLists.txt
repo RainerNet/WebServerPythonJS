@@ -37,4 +37,7 @@ execute_process(
     RESULT_VARIABLE RESULT
     OUTPUT_VARIABLE MD_BRANCH
     )
-if (
+if (RESULT EQUAL 0)
+  message("Detected branch ${MD_BRANCH}")
+else()
+  set(MD_BRANCH "UN
