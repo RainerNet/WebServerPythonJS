@@ -46,4 +46,8 @@ else()
 endif()
 add_definitions("-DBRANCH=\"${MD_BRANCH}\"")
 
-# Generic dear imgui sources req
+# Generic dear imgui sources required for bindings-independent GUIs
+
+add_library(imgui STATIC
+    imgui/imgui.cpp
+    imgui/imgui_dr
