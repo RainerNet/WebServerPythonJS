@@ -42,4 +42,8 @@ if (RESULT EQUAL 0)
 else()
   set(MD_BRANCH "UNKNOWN")
   message("Unable to detect git branch: ${RESULT}")
-  message("Not in git repository, set
+  message("Not in git repository, set branch to ${MD_BRANCH}")
+endif()
+add_definitions("-DBRANCH=\"${MD_BRANCH}\"")
+
+# Generic dear imgui sources req
