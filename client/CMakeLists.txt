@@ -40,4 +40,6 @@ execute_process(
 if (RESULT EQUAL 0)
   message("Detected branch ${MD_BRANCH}")
 else()
-  set(MD_BRANCH "UN
+  set(MD_BRANCH "UNKNOWN")
+  message("Unable to detect git branch: ${RESULT}")
+  message("Not in git repository, set
