@@ -50,4 +50,8 @@ add_definitions("-DBRANCH=\"${MD_BRANCH}\"")
 
 add_library(imgui STATIC
     imgui/imgui.cpp
-    imgui/imgui_dr
+    imgui/imgui_draw.cpp
+    imgui/imgui_widgets.cpp
+    )
+
+# We want to use as generic bindings as possifle f
