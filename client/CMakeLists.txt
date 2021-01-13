@@ -54,4 +54,7 @@ add_library(imgui STATIC
     imgui/imgui_widgets.cpp
     )
 
-# We want to use as generic bindings as possifle f
+# We want to use as generic bindings as possifle for imgui so we don't have
+# to write any platform-specific code
+
+add_library(imgui-bindings STATIC
