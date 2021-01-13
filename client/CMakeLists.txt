@@ -58,3 +58,6 @@ add_library(imgui STATIC
 # to write any platform-specific code
 
 add_library(imgui-bindings STATIC
+    imgui/examples/imgui_impl_glfw.cpp
+    imgui/examples/imgui_impl_opengl3.cpp
+    imgui/examples/libs
