@@ -64,4 +64,8 @@ add_library(imgui-bindings STATIC
 target_include_directories(imgui-bindings PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/imgui
     ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples
-    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples/
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples/libs/glfw/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples/libs/gl3w
+    )
+find_library(GLFW3_LIB
+    NAMES 
