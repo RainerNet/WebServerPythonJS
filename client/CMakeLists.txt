@@ -62,4 +62,6 @@ add_library(imgui-bindings STATIC
     imgui/examples/imgui_impl_opengl3.cpp
     imgui/examples/libs/gl3w/GL/gl3w.c)
 target_include_directories(imgui-bindings PUBLIC
-    ${CMAKE_CURRENT_SOU
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples/
