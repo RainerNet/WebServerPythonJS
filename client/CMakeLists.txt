@@ -68,4 +68,8 @@ target_include_directories(imgui-bindings PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples/libs/gl3w
     )
 find_library(GLFW3_LIB
-    NAMES 
+    NAMES glfw3_2018
+    PATHS "${CMAKE_CURRENT_SOURCE_DIR}"
+    PATH_SUFFIXES lib
+    NO_DEFAULT_PATH
+    )
