@@ -81,3 +81,9 @@ target_link_libraries(imgui-bindings ${OPENGL_LIB} ${GLFW3_LIB})
 
 add_executable(md-client ${SOURCES})
 target_link_libraries(md-client
+    imgui
+    imgui-bindings
+    )
+
+target_include_directories(md-client PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DI
