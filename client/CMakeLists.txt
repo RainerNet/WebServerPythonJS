@@ -86,4 +86,8 @@ target_link_libraries(md-client
     )
 
 target_include_directories(md-client PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DI
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui
+    ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples
+    )
+
