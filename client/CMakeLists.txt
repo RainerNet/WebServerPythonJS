@@ -91,3 +91,4 @@ target_include_directories(md-client PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/imgui/examples
     )
 
+add_compile_options(-Wall -Wextra -Werror)
