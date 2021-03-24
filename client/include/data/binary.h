@@ -20,4 +20,10 @@
  * IN THE SOFTWARE.
  */
 
-#in
+#include <string>
+
+#ifdef _MSC_VER
+#include <Windows.h>
+#endif // _MSC_VER
+
+#include "data/hexdump_ca
