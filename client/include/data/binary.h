@@ -26,4 +26,11 @@
 #include <Windows.h>
 #endif // _MSC_VER
 
-#include "data/hexdump_ca
+#include "data/hexdump_cache.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace data {
+
+class Binary {
+  std::string path_;
