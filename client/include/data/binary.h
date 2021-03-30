@@ -38,4 +38,9 @@ class Binary {
   HANDLE bin_file_;
   HANDLE bin_file_mapping_;
 #endif // _MSC_VER
-  void const
+  void const* buffer_;
+  uint64_t length_;
+  HexdumpCache hexdump_cache_;
+
+ public:
+  explicit Binary
