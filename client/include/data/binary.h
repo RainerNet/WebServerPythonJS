@@ -34,3 +34,8 @@ namespace data {
 
 class Binary {
   std::string path_;
+#ifdef _MSC_VER
+  HANDLE bin_file_;
+  HANDLE bin_file_mapping_;
+#endif // _MSC_VER
+  void const
