@@ -49,4 +49,9 @@ class Binary {
   void Load() noexcept(false);
 
   std::string const& path() const {
-   
+    return path_;
+  }
+  void const* buffer() const {
+    return buffer_;
+  }
+  uint64_t leng
