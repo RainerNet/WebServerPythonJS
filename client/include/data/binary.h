@@ -43,4 +43,10 @@ class Binary {
   HexdumpCache hexdump_cache_;
 
  public:
-  explicit Binary
+  explicit Binary(std::string const& path);
+  ~Binary();
+
+  void Load() noexcept(false);
+
+  std::string const& path() const {
+   
