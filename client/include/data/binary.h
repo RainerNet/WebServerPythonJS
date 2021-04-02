@@ -54,4 +54,12 @@ class Binary {
   void const* buffer() const {
     return buffer_;
   }
-  uint64_t leng
+  uint64_t length() const {
+    return length_;
+  }
+  HexdumpCache const& hexdump_cache() const {
+    return hexdump_cache_;
+  }
+};
+
+} // namespace d
