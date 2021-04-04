@@ -21,41 +21,31 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_DATA_HEXDUMP_CACHE_H_
-#define MACHINE_DECOMPILER_DATA_HEXDUMP_CACHE_H_
+#ifndef MACHINE_DECOMPILER_DATA_LOG_OUTPUT_H_
+#define MACHINE_DECOMPILER_DATA_LOG_OUTPUT_H_
 
-#include <stdint.h>
+#include <string>
+#include <list>
+#include <mutex>
+
+#include <stdarg.h>
 
 namespace machine_decompiler {
 namespace client {
 namespace data {
 
-class Binary;
-
-class HexdumpCache {
-  Binary& binary_;
-  char const* hex_buff_;
-  uint64_t hex_buff_length_;
+class LogOutput {
+  std::mutex output_mutex_;
+  std::list<std::string> output_;
 
  public:
-  explicit HexdumpCache(Binary& binary);
-  ~HexdumpCache();
-
-  void Load();
-
-  Binary& binary() {
-    return binary_;
-  }
-  char const* hex_buff() const {
-    return hex_buff_;
-  }
-  uint64_t hex_buff_length() const {
-    return hex_buff_length_;
-  }
+  LogOutput();
+  void Log(char const* fmt, ...);
+  unsigned LatestHistory(std::string const* dstHistory[], unsigned maxLines);
 };
 
 } // namespace data
 } // namespace client
 } // namespace machine_decompiler
 
-#endif // MACHINE_DECOMPILER_DATA_HEXDUMP_CACHE_H_
+#endif // MACHINE_DECOMPILER_DATA_LOG_OUTPUT_H_
