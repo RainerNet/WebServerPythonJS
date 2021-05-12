@@ -21,4 +21,11 @@
  */
 
 #ifndef MACHINE_DECOMPILER_ERROR_NOT_IMPLEMENTED_H_
-#define MACHINE_DECOMPILER_ERROR_NOT_I
+#define MACHINE_DECOMPILER_ERROR_NOT_IMPLEMENTED_H_
+
+#include <string>
+#include <stdexcept>
+
+#include <string.h>
+
+namespace machine_de
