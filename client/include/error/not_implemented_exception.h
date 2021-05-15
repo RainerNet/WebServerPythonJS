@@ -28,4 +28,8 @@
 
 #include <string.h>
 
-namespace machine_de
+namespace machine_decompiler {
+namespace client {
+namespace error {
+
+class NotImplementedException : public std::log
