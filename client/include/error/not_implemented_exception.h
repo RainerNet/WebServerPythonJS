@@ -36,4 +36,7 @@ class NotImplementedException : public std::logic_error {
   char const* msg_;
 
  public:
-  explicit NotImplementedException(std::string const& memb
+  explicit NotImplementedException(std::string const& member)
+      :std::logic_error(member) {
+    auto local = (std::string(std::logic_error::what())
+     
