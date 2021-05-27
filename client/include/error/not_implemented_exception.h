@@ -32,4 +32,8 @@ namespace machine_decompiler {
 namespace client {
 namespace error {
 
-class NotImplementedException : public std::log
+class NotImplementedException : public std::logic_error {
+  char const* msg_;
+
+ public:
+  explicit NotImplementedException(std::string const& memb
