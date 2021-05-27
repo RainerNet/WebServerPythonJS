@@ -39,4 +39,6 @@ class NotImplementedException : public std::logic_error {
   explicit NotImplementedException(std::string const& member)
       :std::logic_error(member) {
     auto local = (std::string(std::logic_error::what())
-     
+        + " is not yet implemented");
+    msg_ = new char[local.size() + 1];
+    strcpy(const_cast<char*>(m
