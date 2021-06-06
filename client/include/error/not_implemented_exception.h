@@ -59,4 +59,4 @@ class NotImplementedException : public std::logic_error {
 
 #define NotImplementedException() NotImplementedException(__FUNCTION__)
 
-#endif // MACHI
+#endif // MACHINE_DECOMPILER_ERROR_NOT_IMPLEMENTED_H_
