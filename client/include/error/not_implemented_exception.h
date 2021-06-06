@@ -48,4 +48,11 @@ class NotImplementedException : public std::logic_error {
     delete msg_;
   }
 
-  char const* what() 
+  char const* what() const override {
+    return msg_;
+  }
+};
+
+} // namespace error
+} // namespace client
+} // namesp
