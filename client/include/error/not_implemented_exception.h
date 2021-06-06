@@ -55,4 +55,8 @@ class NotImplementedException : public std::logic_error {
 
 } // namespace error
 } // namespace client
-} // namesp
+} // namespace machine_decompiler
+
+#define NotImplementedException() NotImplementedException(__FUNCTION__)
+
+#endif // MACHI
