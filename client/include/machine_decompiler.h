@@ -20,4 +20,10 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILE
+#ifndef MACHINE_DECOMPILER_H_
+#define MACHINE_DECOMPILER_H_
+
+#include <string>
+
+#include "data/log_output.h"
+#include "data/bi
