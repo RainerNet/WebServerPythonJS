@@ -26,4 +26,11 @@
 #include <string>
 
 #include "data/log_output.h"
-#include "data/bi
+#include "data/binary.h"
+#include "ui/manager.h"
+
+namespace machine_decompiler {
+namespace client {
+
+class MachineDecompiler {
+  
