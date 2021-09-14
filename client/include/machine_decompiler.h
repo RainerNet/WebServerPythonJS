@@ -33,4 +33,9 @@ namespace machine_decompiler {
 namespace client {
 
 class MachineDecompiler {
-  
+  data::LogOutput log_output_;
+  data::Binary* binary_;
+  ui::Manager ui_manager_;
+
+ public:
+  Mach
