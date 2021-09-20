@@ -38,4 +38,6 @@ class MachineDecompiler {
   ui::Manager ui_manager_;
 
  public:
-  Mach
+  MachineDecompiler();
+  void ShowWindow();
+  void LoadBinary(std::string& path) noexcept(
