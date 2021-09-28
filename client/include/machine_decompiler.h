@@ -40,4 +40,10 @@ class MachineDecompiler {
  public:
   MachineDecompiler();
   void ShowWindow();
-  void LoadBinary(std::string& path) noexcept(
+  void LoadBinary(std::string& path) noexcept(false);
+
+  ui::Manager& ui_manager() {
+    return ui_manager_;
+  }
+  data::LogOutput& log_output() {
+    retu
