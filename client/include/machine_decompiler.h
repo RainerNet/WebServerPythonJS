@@ -46,4 +46,11 @@ class MachineDecompiler {
     return ui_manager_;
   }
   data::LogOutput& log_output() {
-    retu
+    return log_output_;
+  }
+  data::Binary* binary() {
+    return binary_;
+  }
+};
+
+} // na
