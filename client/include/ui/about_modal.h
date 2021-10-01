@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,40 +21,4 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_H_
-#define MACHINE_DECOMPILER_H_
-
-#include <string>
-
-#include "data/log_output.h"
-#include "data/binary.h"
-#include "ui/manager.h"
-
-namespace machine_decompiler {
-namespace client {
-
-class MachineDecompiler {
-  data::LogOutput log_output_;
-  data::Binary* binary_;
-  ui::Manager ui_manager_;
-
- public:
-  MachineDecompiler();
-  void ShowWindow();
-  void LoadBinary(std::string& path) noexcept(false);
-
-  ui::Manager& ui_manager() {
-    return ui_manager_;
-  }
-  data::LogOutput& log_output() {
-    return log_output_;
-  }
-  data::Binary* binary() {
-    return binary_;
-  }
-};
-
-} // namespace client
-} // namespace machine_decompiler
-
-#endif // MACHINE_DECOMPILER_H_
+#ifndef MACHINE_DECOMPILER_UI_ABOUT_H_
