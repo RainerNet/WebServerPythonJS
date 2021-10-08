@@ -21,25 +21,22 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_UI_ABOUT_H_
-#define MACHINE_DECOMPILER_UI_ABOUT_H_
+#ifndef MACHINE_DECOMPILER_UI_DISASM_WINDOW_H_
+#define MACHINE_DECOMPILER_UI_DISASM_WINDOW_H_
 
-#include "ui/modal.h"
+#include "ui/window.h"
 
 namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-class AboutModal : public Modal {
+class Manager;
+
+class DisasmWindow : public Window {
  protected:
   void Render() override;
 
  public:
-  explicit AboutModal(Manager& manager);
+  explicit DisasmWindow(Manager& manager);
+  ~DisasmWindow() override = default;
 };
-
-} // namespace ui
-} // namespace client
-} // namespace machine_decompiler
-
-#endif // MACHINE_DECOMPILER_UI_ABOUT_H_
