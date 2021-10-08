@@ -40,3 +40,9 @@ class DisasmWindow : public Window {
   explicit DisasmWindow(Manager& manager);
   ~DisasmWindow() override = default;
 };
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_UI_DISASM_WINDOW_H_
