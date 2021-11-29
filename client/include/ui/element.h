@@ -21,4 +21,11 @@
  */
 
 #ifndef MACHINE_DECOMPILER_UI_ELEMENT_H_
-#define M
+#define MACHINE_DECOMPILER_UI_ELEMENT_H_
+
+#include <string>
+
+#include <imgui.h>
+
+namespace machine_decompiler {
+n
