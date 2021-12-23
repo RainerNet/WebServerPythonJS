@@ -28,4 +28,11 @@
 #include <imgui.h>
 
 namespace machine_decompiler {
-n
+namespace client {
+namespace ui {
+
+class Manager;
+
+class Element {
+  Manager& manager_;
+  s
