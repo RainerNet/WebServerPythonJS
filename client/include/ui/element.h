@@ -35,4 +35,9 @@ class Manager;
 
 class Element {
   Manager& manager_;
-  s
+  std::string id_;
+  ImVec2 default_size_;
+
+ protected:
+  explicit Element(Manager& manager,
+      std::s
