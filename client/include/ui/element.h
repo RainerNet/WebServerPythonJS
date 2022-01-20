@@ -40,4 +40,9 @@ class Element {
 
  protected:
   explicit Element(Manager& manager,
-      std::s
+      std::string const& title, ImVec2 const& default_size);
+
+  virtual void Render() = 0;
+
+ public:
+  virtual 
