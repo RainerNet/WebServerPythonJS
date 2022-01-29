@@ -45,4 +45,11 @@ class Element {
   virtual void Render() = 0;
 
  public:
-  virtual 
+  virtual ~Element() = default;
+
+  virtual void Show() = 0;
+
+  Manager& manager() {
+    return manager_;
+  }
+  std::stri
