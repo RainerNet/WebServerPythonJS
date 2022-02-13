@@ -52,4 +52,9 @@ class Element {
   Manager& manager() {
     return manager_;
   }
-  std::stri
+  std::string const& id() const {
+    return id_;
+  }
+  ImVec2 const& default_size() const {
+    return default_size_;
+  
