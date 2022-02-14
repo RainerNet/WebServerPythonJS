@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,48 +21,25 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_UI_ELEMENT_H_
-#define MACHINE_DECOMPILER_UI_ELEMENT_H_
+#ifndef MACHINE_DECOMPILER_UI_FLOW_GRAPH_WINDOW_H_
+#define MACHINE_DECOMPILER_UI_FLOW_GRAPH_WINDOW_H_
 
-#include <string>
-
-#include <imgui.h>
+#include "ui/window.h"
 
 namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-class Manager;
-
-class Element {
-  Manager& manager_;
-  std::string id_;
-  ImVec2 default_size_;
-
+class FlowGraphWindow : public Window {
  protected:
-  explicit Element(Manager& manager,
-      std::string const& title, ImVec2 const& default_size);
-
-  virtual void Render() = 0;
+  void Render() override;
 
  public:
-  virtual ~Element() = default;
-
-  virtual void Show() = 0;
-
-  Manager& manager() {
-    return manager_;
-  }
-  std::string const& id() const {
-    return id_;
-  }
-  ImVec2 const& default_size() const {
-    return default_size_;
-  }
+  FlowGraphWindow(Manager& manager);
 };
 
 } // namespace ui
 } // namespace client
 } // namespace machine_decompiler
 
-#endif // MACHINE_DECOMPILER_UI_ELEMENT_H_
+#endif // MACHINE_DECOMPILER_UI_FLOW_GRAPH_WINDOW_H_
