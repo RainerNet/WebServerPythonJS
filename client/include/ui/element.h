@@ -57,4 +57,11 @@ class Element {
   }
   ImVec2 const& default_size() const {
     return default_size_;
-  
+  }
+};
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMP
