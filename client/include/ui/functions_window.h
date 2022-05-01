@@ -29,4 +29,9 @@ namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-class FunctionsWindow : pub
+class FunctionsWindow : public Window {
+ protected:
+  void Render() override;
+
+ public:
+  FunctionsWindow(Manager&
