@@ -23,4 +23,10 @@
 #ifndef MACHINE_DECOMPILER_UI_FUNCTIONS_WINDOW_H_
 #define MACHINE_DECOMPILER_UI_FUNCTIONS_WINDOW_H_
 
-#include "u
+#include "ui/window.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+class FunctionsWindow : pub
