@@ -34,4 +34,10 @@ class FunctionsWindow : public Window {
   void Render() override;
 
  public:
-  FunctionsWindow(Manager&
+  FunctionsWindow(Manager& manager);
+  ~FunctionsWindow() override = default;
+};
+
+} // namespace ui
+} // namespace client
+} // namespac
