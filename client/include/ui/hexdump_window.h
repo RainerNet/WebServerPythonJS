@@ -45,3 +45,6 @@ class HexdumpWindow : public Window {
 
 } // namespace ui
 } // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_UI_HEXDUMP_WINDOW_H_
