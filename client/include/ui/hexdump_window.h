@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,8 +21,8 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_UI_FUNCTIONS_WINDOW_H_
-#define MACHINE_DECOMPILER_UI_FUNCTIONS_WINDOW_H_
+#ifndef MACHINE_DECOMPILER_UI_HEXDUMP_WINDOW_H_
+#define MACHINE_DECOMPILER_UI_HEXDUMP_WINDOW_H_
 
 #include "ui/window.h"
 
@@ -29,17 +30,18 @@ namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-class FunctionsWindow : public Window {
+class Manager;
+
+class HexdumpWindow : public Window {
  protected:
   void Render() override;
 
  public:
-  FunctionsWindow(Manager& manager);
-  ~FunctionsWindow() override = default;
+  explicit HexdumpWindow(Manager& manager);
+  ~HexdumpWindow() override = default;
+
+  void Show() override;
 };
 
 } // namespace ui
 } // namespace client
-} // namespace machine_decompiler
-
-#endif // MACHINE_DECOMPILER_UI_FUNCTIONS_WINDOW_H_
