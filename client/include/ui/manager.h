@@ -21,4 +21,11 @@
  */
 
 #ifndef MACHINE_DECOMPILER_UI_MANAGER_H_
-#define MACHINE_DECOMPI
+#define MACHINE_DECOMPILER_UI_MANAGER_H_
+
+#include <vector>
+
+#include "ui/element.h"
+
+namespace machine_decompiler {
+namespa
