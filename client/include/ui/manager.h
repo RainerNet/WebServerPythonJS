@@ -28,4 +28,12 @@
 #include "ui/element.h"
 
 namespace machine_decompiler {
-namespa
+namespace client {
+
+class MachineDecompiler;
+
+namespace ui {
+
+class Manager {
+  MachineDecompiler& decompiler_;
+  std::vect
