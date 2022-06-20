@@ -40,4 +40,10 @@ class Manager {
   std::vector<Element*> add_queue_;
 
  public:
-  explicit Manager(MachineDecompiler& decomp
+  explicit Manager(MachineDecompiler& decompiler);
+
+  void Add(Element* elem);
+  bool Remove(Element* elem);
+  void Show();
+
+  MachineDecompiler&
