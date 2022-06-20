@@ -36,4 +36,8 @@ namespace ui {
 
 class Manager {
   MachineDecompiler& decompiler_;
-  std::vect
+  std::vector<Element*> elements_;
+  std::vector<Element*> add_queue_;
+
+ public:
+  explicit Manager(MachineDecompiler& decomp
