@@ -53,4 +53,6 @@ class Manager {
 
 } // namespace ui
 } // namespace client
-}
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_UI_MANAGER_H_
