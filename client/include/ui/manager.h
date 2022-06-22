@@ -46,4 +46,11 @@ class Manager {
   bool Remove(Element* elem);
   void Show();
 
-  MachineDecompiler&
+  MachineDecompiler& decompiler() {
+    return decompiler_;
+  }
+};
+
+} // namespace ui
+} // namespace client
+}
