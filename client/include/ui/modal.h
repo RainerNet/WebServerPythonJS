@@ -26,3 +26,10 @@
 #include <imgui.h>
 
 #include "ui/element.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+namespace {
+ImVec2 co
