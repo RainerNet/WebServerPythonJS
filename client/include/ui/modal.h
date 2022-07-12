@@ -20,4 +20,9 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMP
+#ifndef MACHINE_DECOMPILER_UI_MODAL_H_
+#define MACHINE_DECOMPILER_UI_MODAL_H_
+
+#include <imgui.h>
+
+#include "ui/element.h"
