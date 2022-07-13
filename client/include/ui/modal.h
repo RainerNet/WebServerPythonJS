@@ -38,4 +38,6 @@ ImVec2 const defModalSize(0, 0);
 class Modal : public Element {
   bool open_;
 
- public
+ public:
+  explicit Modal(Manager& manager,
+      std::string const& title, ImVec2 const& default_size
