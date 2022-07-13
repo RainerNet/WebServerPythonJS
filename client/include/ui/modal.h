@@ -32,4 +32,10 @@ namespace client {
 namespace ui {
 
 namespace {
-ImVec2 co
+ImVec2 const defModalSize(0, 0);
+} // namespace
+
+class Modal : public Element {
+  bool open_;
+
+ public
