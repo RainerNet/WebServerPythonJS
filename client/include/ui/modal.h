@@ -40,4 +40,13 @@ class Modal : public Element {
 
  public:
   explicit Modal(Manager& manager,
-      std::string const& title, ImVec2 const& default_size
+      std::string const& title, ImVec2 const& default_size = defModalSize);
+
+  void Show() override;
+
+  bool open() const {
+    return open_;
+  }
+};
+
+} // na
