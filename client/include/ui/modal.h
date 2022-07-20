@@ -49,4 +49,8 @@ class Modal : public Element {
   }
 };
 
-} // na
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_U
