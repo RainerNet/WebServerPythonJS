@@ -53,4 +53,4 @@ class Modal : public Element {
 } // namespace client
 } // namespace machine_decompiler
 
-#endif // MACHINE_DECOMPILER_U
+#endif // MACHINE_DECOMPILER_UI_MODAL_H_
