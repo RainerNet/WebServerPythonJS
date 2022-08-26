@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,27 +21,29 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DECOMPILER_UI_OPEN_FILE_H_
-#define MACHINE_DECOMPILER_UI_OPEN_FILE_H_
+#ifndef MACHINE_DECOMPILER_UI_RIBBON_H_
+#define MACHINE_DECOMPILER_UI_RIBBON_H_
 
-#include "ui/modal.h"
+#include "ui/element.h"
 
 namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-class OpenFileModal : public Modal {
-  char text_buff_[1024];
-
+class Ribbon : public Element {
  protected:
+  ~Ribbon() override = default;
+
   void Render() override;
 
  public:
-  explicit OpenFileModal(Manager& manager);
+  explicit Ribbon(Manager& manager);
+
+  void Show() override;
 };
 
 } // namespace ui
 } // namespace client
 } // namespace machine_decompiler
 
-#endif // MACHINE_DECOMPILER_UI_OPEN_FILE_H_
+#endif // MACHINE_DECOMPILER_UI_RIBBON_H_
