@@ -33,4 +33,10 @@ class OpenFileModal : public Modal {
   char text_buff_[1024];
 
  protected:
-  vo
+  void Render() override;
+
+ public:
+  explicit OpenFileModal(Manager& manager);
+};
+
+} // 
