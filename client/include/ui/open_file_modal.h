@@ -21,4 +21,10 @@
  */
 
 #ifndef MACHINE_DECOMPILER_UI_OPEN_FILE_H_
-#define MACHINE_DECOMPILER_UI_
+#define MACHINE_DECOMPILER_UI_OPEN_FILE_H_
+
+#include "ui/modal.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace ui {
