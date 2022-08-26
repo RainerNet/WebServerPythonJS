@@ -39,4 +39,8 @@ class OpenFileModal : public Modal {
   explicit OpenFileModal(Manager& manager);
 };
 
-} // 
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_U
