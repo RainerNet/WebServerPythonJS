@@ -20,4 +20,9 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef MACHINE_DEC
+#ifndef MACHINE_DECOMPILER_UI_STRINGS_WINDOW_H_
+#define MACHINE_DECOMPILER_UI_STRINGS_WINDOW_H_
+
+#include "ui/window.h"
+
+n
