@@ -25,4 +25,10 @@
 
 #include "ui/window.h"
 
-n
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+class Manager;
+
+class StringsWindow : publi
