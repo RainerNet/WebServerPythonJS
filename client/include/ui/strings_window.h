@@ -31,4 +31,10 @@ namespace ui {
 
 class Manager;
 
-class StringsWindow : publi
+class StringsWindow : public Window {
+ protected:
+  void Render() override;
+
+ public:
+  explicit StringsWindow(Manager& manager);
+  ~Strin
