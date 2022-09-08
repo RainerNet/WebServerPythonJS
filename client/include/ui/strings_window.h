@@ -37,4 +37,9 @@ class StringsWindow : public Window {
 
  public:
   explicit StringsWindow(Manager& manager);
-  ~Strin
+  ~StringsWindow() override = default;
+};
+
+} // namespace ui
+} // namespace client
+} // namespace machine
