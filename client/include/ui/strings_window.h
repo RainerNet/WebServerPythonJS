@@ -42,4 +42,6 @@ class StringsWindow : public Window {
 
 } // namespace ui
 } // namespace client
-} // namespace machine
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_UI_STRINGS_WINDOW_H_
