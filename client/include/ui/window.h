@@ -39,4 +39,11 @@ ImVec2 const newWindowDefaultSize(128, 256);
 
 } // namespace
 
-cl
+class Manager;
+
+class Window : public Element {
+  bool open_;
+  bool new_window_;
+
+ protected:
+  
