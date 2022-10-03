@@ -29,4 +29,14 @@
 
 #include "ui/element.h"
 
-namespace machine_decompile
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+namespace {
+
+ImVec2 const newWindowDefaultSize(128, 256);
+
+} // namespace
+
+cl
