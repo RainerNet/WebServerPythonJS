@@ -46,4 +46,5 @@ class Window : public Element {
   bool new_window_;
 
  protected:
-  
+  explicit Window(Manager& manager,
+      std::string const& title, ImVec2 const& defSize = newWindowDefaul
