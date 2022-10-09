@@ -57,4 +57,11 @@ class Window : public Element {
   }
 
  private:
-  bool new_w
+  bool new_window() {
+    if (new_window_) {
+      new_window_ = false;
+      return true;
+    }
+    return false;
+  }
+};
