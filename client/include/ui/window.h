@@ -47,4 +47,14 @@ class Window : public Element {
 
  protected:
   explicit Window(Manager& manager,
-      std::string const& title, ImVec2 const& defSize = newWindowDefaul
+      std::string const& title, ImVec2 const& defSize = newWindowDefaultSize);
+
+ public:
+  void Show() override;
+
+  bool open() const {
+    return open_;
+  }
+
+ private:
+  bool new_w
