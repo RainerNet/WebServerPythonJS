@@ -65,3 +65,9 @@ class Window : public Element {
     return false;
   }
 };
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
+
+#endif // MACHINE_DECOMPILER_UI_WIND
