@@ -70,4 +70,4 @@ class Window : public Element {
 } // namespace client
 } // namespace machine_decompiler
 
-#endif // MACHINE_DECOMPILER_UI_WIND
+#endif // MACHINE_DECOMPILER_UI_WINDOW_H_
