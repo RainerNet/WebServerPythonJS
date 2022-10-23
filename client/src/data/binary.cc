@@ -105,3 +105,27 @@ void Binary::Load() {
 
   hexdump_cache_.Load();
 }
+#endif // _MSC_VER
+
+#ifdef __unix__
+void Binary::Load() {
+  // Try to open the file
+  auto fd = open(path.c_str(), O_RDWR);
+  if (fd == -1)
+    throw std::exception("Unable to open file " + path);
+
+  // Get the size of the file
+
+  // Map the file into memory
+  auto const* bin_disk = mmap(nullptr, 0ll, PROT_READ, MAP_PRIVATE, fd, 0);
+  if (bin_disk == MAP_FAILED) {
+    close(fd);
+    throw std::exception("Unable to map " + path + " into memory");
+  }
+  hexdump_cache_.Load();
+}
+#endif // __unix__
+
+} // namespace data
+} // namespace client
+} // namespace machine_decompiler
