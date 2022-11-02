@@ -33,4 +33,8 @@ LogOutput::LogOutput()
       output_() {
 }
 
-void LogOutput::Log(char const* fm
+void LogOutput::Log(char const* fmt, ...) {
+  char buff[1024 * 16];
+  va_list args;
+  va_start(args, fmt);
+  vsnprintf(buff, sizeof (bu
