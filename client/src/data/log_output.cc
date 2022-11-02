@@ -26,4 +26,11 @@
 
 namespace machine_decompiler {
 namespace client {
-names
+namespace data {
+
+LogOutput::LogOutput()
+    : output_mutex_(),
+      output_() {
+}
+
+void LogOutput::Log(char const* fm
