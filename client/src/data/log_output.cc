@@ -20,4 +20,10 @@
  * IN THE SOFTWARE.
  */
 
-#includ
+#include <stdio.h>
+
+#include "data/log_output.h"
+
+namespace machine_decompiler {
+namespace client {
+names
