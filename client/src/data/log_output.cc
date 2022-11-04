@@ -37,4 +37,7 @@ void LogOutput::Log(char const* fmt, ...) {
   char buff[1024 * 16];
   va_list args;
   va_start(args, fmt);
-  vsnprintf(buff, sizeof (bu
+  vsnprintf(buff, sizeof (buff) - 1, fmt, args);
+  va_end(args);
+  std::lock_guard<std::mutex> lock(output_mutex_);
+  output
