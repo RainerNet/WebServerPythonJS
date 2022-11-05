@@ -44,4 +44,9 @@ void LogOutput::Log(char const* fmt, ...) {
 }
 
 unsigned LogOutput::LatestHistory(
-    std::string const* dstHistory[], uns
+    std::string const* dstHistory[], unsigned maxlen) {
+  if (maxlen == 0)
+    return 0;
+
+  auto start_idx = maxlen, written = 0u;
+ 
