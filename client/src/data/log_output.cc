@@ -40,4 +40,8 @@ void LogOutput::Log(char const* fmt, ...) {
   vsnprintf(buff, sizeof (buff) - 1, fmt, args);
   va_end(args);
   std::lock_guard<std::mutex> lock(output_mutex_);
-  output
+  output_.push_front(std::string(buff));
+}
+
+unsigned LogOutput::LatestHistory(
+    std::string const* dstHistory[], uns
