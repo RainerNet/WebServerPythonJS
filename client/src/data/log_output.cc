@@ -49,4 +49,8 @@ unsigned LogOutput::LatestHistory(
     return 0;
 
   auto start_idx = maxlen, written = 0u;
- 
+  if (maxlen > output_.size())
+    start_idx = output_.size();
+
+  for (auto& line : output_) {
+    dstHistory
