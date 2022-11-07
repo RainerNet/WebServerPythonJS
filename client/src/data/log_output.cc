@@ -53,4 +53,10 @@ unsigned LogOutput::LatestHistory(
     start_idx = output_.size();
 
   for (auto& line : output_) {
-    dstHistory
+    dstHistory[--start_idx] = &line;
+    written++;
+    if (start_idx == 0)
+      break;
+  }
+
+  return wr
