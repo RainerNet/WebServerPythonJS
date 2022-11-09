@@ -59,4 +59,9 @@ unsigned LogOutput::LatestHistory(
       break;
   }
 
-  return wr
+  return written;
+}
+
+} // namespace data
+} // namespace client
+} // namespace machine_decompiler
