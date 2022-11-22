@@ -23,9 +23,8 @@
 
 #include <imgui.h>
 
-#include "ui/console_window.h"
+#include "ui/disasm_window.h"
 #include "ui/manager.h"
-#include "machine_decompiler.h"
 
 namespace machine_decompiler {
 namespace client {
@@ -33,40 +32,4 @@ namespace ui {
 
 namespace {
 
-ImVec2 const defWinSize(512, 128);
-unsigned const maxHistory = 1000;
-
-} // namespace
-
-ConsoleWindow::ConsoleWindow(Manager &manager)
-    : Window(manager, "Console", defWinSize) {
-}
-
-void ConsoleWindow::Render() {
-  static std::string const* history[maxHistory];
-  auto len = manager().decompiler().log_output().LatestHistory(
-      history, maxHistory);
-  static char strbuff[maxHistory * 1024];
-
-  char* curr = strbuff;
-  for (auto i = 0u; i < len; ++i)
-    curr += sprintf(curr, "%s\n", history[i]->c_str());
-
-  ImVec2 size(ImGui::GetWindowContentRegionWidth(),
-      ImGui::GetWindowHeight() - 20);
-  ImGui::InputTextMultiline("", strbuff, sizeof (strbuff),
-      size, ImGuiInputTextFlags_ReadOnly);
-}
-
-void ConsoleWindow::Show() {
-  ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.f, 0.f));
-  auto const& winbg = ImGui::GetStyle().Colors[ImGuiCol_WindowBg];
-  ImGui::PushStyleColor(ImGuiCol_FrameBg, winbg);
-  Window::Show();
-  ImGui::PopStyleColor(1);
-  ImGui::PopStyleVar(1);
-}
-
-} // namespace ui
-} // namespace client
-} // namespace machine_decompiler
+ImVec2 const defWinSize(384, 512);
