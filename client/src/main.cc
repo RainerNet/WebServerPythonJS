@@ -24,4 +24,10 @@
 
 int main(int argc, char const** args) {
   using namespace machine_decompiler::client;
-  MachineDecompiler decom
+  MachineDecompiler decompiler;
+  decompiler.ShowWindow();
+
+  if (argc > 1) {
+    try {
+      std::string path(args[1]);
+      decom
