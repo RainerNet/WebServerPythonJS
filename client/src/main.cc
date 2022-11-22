@@ -30,4 +30,7 @@ int main(int argc, char const** args) {
   if (argc > 1) {
     try {
       std::string path(args[1]);
-      decom
+      decompiler.LoadBinary(path);
+    } catch (const std::exception&) {
+    }
+    // Try to load the file
