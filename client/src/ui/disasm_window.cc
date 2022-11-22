@@ -33,3 +33,17 @@ namespace ui {
 namespace {
 
 ImVec2 const defWinSize(384, 512);
+
+} // namespace
+
+DisasmWindow::DisasmWindow(Manager &manager)
+    : Window(manager, "Disassembly", defWinSize) {
+}
+
+void DisasmWindow::Render() {
+
+}
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
