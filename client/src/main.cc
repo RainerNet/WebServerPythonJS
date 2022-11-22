@@ -22,4 +22,6 @@
 
 #include "machine_decompiler.h"
 
-int main(int ar
+int main(int argc, char const** args) {
+  using namespace machine_decompiler::client;
+  MachineDecompiler decom
