@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,20 +21,36 @@
  * IN THE SOFTWARE.
  */
 
-#include "machine_decompiler.h"
+#include "ui/about_modal.h"
+#include "ui/manager.h"
 
-int main(int argc, char const** args) {
-  using namespace machine_decompiler::client;
-  MachineDecompiler decompiler;
-  decompiler.ShowWindow();
+namespace machine_decompiler {
+namespace client {
+namespace ui {
 
-  if (argc > 1) {
-    try {
-      std::string path(args[1]);
-      decompiler.LoadBinary(path);
-    } catch (const std::exception&) {
-    }
-    // Try to load the file path in args[1]
-  }
-  return 0;
+namespace {
+char const* aboutMessages[] = {
+    "Machine Decompiler",
+    "MD " BRANCH,
+    "",
+    "Copyright (C) 2018 - 2019",
+    "github.com/jha",
+    "",
+    "Your feedback and contributions are appreciated!",
+    "Please visit github.com/jha/machine-decompiler",
+};
+} // namespace
+
+AboutModal::AboutModal(Manager& manager)
+    : Modal(manager, "About Machine Decompiler") {
 }
+
+void AboutModal::Render() {
+  for (auto const& line : aboutMessages) {
+    ImGui::Text(line);
+  }
+}
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
