@@ -38,4 +38,7 @@ std::string fmtptr(void const* ptr) {
 
 } // namespace
 
-Element::Element(Manager &
+Element::Element(Manager &manager,
+    std::string const &title, ImVec2 const &default_size)
+    : manager_(manager),
+      id_(ti
