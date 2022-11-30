@@ -26,4 +26,10 @@
 
 namespace machine_decompiler {
 namespace client {
-n
+namespace ui {
+
+namespace {
+
+std::string fmtptr(void const* ptr) {
+  char buff[64] = {0};
+  sprintf(buff, "%04X", rein
