@@ -41,4 +41,9 @@ std::string fmtptr(void const* ptr) {
 Element::Element(Manager &manager,
     std::string const &title, ImVec2 const &default_size)
     : manager_(manager),
-      id_(ti
+      id_(title + "##" + fmtptr(this)),
+      default_size_(default_size) {
+}
+
+} // namespace ui
+} // namespace client
