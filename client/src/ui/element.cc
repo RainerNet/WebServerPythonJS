@@ -47,3 +47,4 @@ Element::Element(Manager &manager,
 
 } // namespace ui
 } // namespace client
+} // namespace machine_decompiler
