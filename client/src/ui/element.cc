@@ -32,4 +32,10 @@ namespace {
 
 std::string fmtptr(void const* ptr) {
   char buff[64] = {0};
-  sprintf(buff, "%04X", rein
+  sprintf(buff, "%04X", reinterpret_cast<uintptr_t>(ptr));
+  return std::string(buff);
+}
+
+} // namespace
+
+Element::Element(Manager &
