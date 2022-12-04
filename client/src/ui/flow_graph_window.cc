@@ -20,4 +20,9 @@
  * IN THE SOFTWARE.
  */
 
-#include 
+#include <imgui.h>
+
+#include "ui/flow_graph_window.h"
+
+namespace machine_decompiler {
+namespace
