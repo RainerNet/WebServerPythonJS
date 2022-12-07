@@ -25,4 +25,11 @@
 #include "ui/flow_graph_window.h"
 
 namespace machine_decompiler {
-namespace
+namespace client {
+namespace ui {
+
+namespace {
+ImVec2 const defWinSize(384, 384);
+} // namespace
+
+FlowGraphWindow::Flow
