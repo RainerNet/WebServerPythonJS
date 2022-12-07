@@ -32,4 +32,8 @@ namespace {
 ImVec2 const defWinSize(384, 384);
 } // namespace
 
-FlowGraphWindow::Flow
+FlowGraphWindow::FlowGraphWindow(Manager& manager)
+    : Window(manager, "Flow Graph", defWinSize) {
+}
+
+void FlowGraphWindow::Render() {
