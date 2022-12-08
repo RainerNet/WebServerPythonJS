@@ -39,4 +39,9 @@ FlowGraphWindow::FlowGraphWindow(Manager& manager)
 void FlowGraphWindow::Render() {
   ImGui::BeginChild((id() + "_flow_graph").c_str());
   ImGui::Text("flow graph window");
-  I
+  ImGui::EndChild();
+}
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
