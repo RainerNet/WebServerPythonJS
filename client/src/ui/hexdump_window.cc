@@ -22,3 +22,8 @@
 
 #include <imgui.h>
 
+#include "ui/hexdump_window.h"
+#include "ui/manager.h"
+#include "machine_decompiler.h"
+
+namespace 
