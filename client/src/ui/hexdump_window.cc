@@ -26,4 +26,10 @@
 #include "ui/manager.h"
 #include "machine_decompiler.h"
 
-namespace 
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+namespace {
+
+ImVec2 const defWinSize(256, 384)
