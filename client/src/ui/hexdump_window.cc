@@ -32,4 +32,9 @@ namespace ui {
 
 namespace {
 
-ImVec2 const defWinSize(256, 384)
+ImVec2 const defWinSize(256, 384);
+
+} // namespace
+
+HexdumpWindow::HexdumpWindow(Manager &manager)
+    : Window(manager, "Hexdump", defW
