@@ -37,4 +37,8 @@ ImVec2 const defWinSize(256, 384);
 } // namespace
 
 HexdumpWindow::HexdumpWindow(Manager &manager)
-    : Window(manager, "Hexdump", defW
+    : Window(manager, "Hexdump", defWinSize) {
+}
+
+void HexdumpWindow::Render() {
+  auto& hdc = manager().decompiler().binary()->hexdump_
