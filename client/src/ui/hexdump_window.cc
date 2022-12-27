@@ -41,4 +41,8 @@ HexdumpWindow::HexdumpWindow(Manager &manager)
 }
 
 void HexdumpWindow::Render() {
-  auto& hdc = manager().decompiler().binary()->hexdump_
+  auto& hdc = manager().decompiler().binary()->hexdump_cache();
+
+  ImVec2 size(ImGui::GetWindowContentRegionWidth(),
+      ImGui::GetWindowHeight() - 20);
+  
