@@ -46,4 +46,8 @@ void HexdumpWindow::Render() {
   ImVec2 size(ImGui::GetWindowContentRegionWidth(),
       ImGui::GetWindowHeight() - 20);
   ImGui::InputTextMultiline("", const_cast<char*>(hdc.hex_buff()),
-      hdc.hex_buff_length(), size, ImGuiInputTextFlag
+      hdc.hex_buff_length(), size, ImGuiInputTextFlags_ReadOnly);
+}
+
+void HexdumpWindow::Show() {
+  ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImV
