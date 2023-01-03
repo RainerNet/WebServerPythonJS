@@ -52,4 +52,10 @@ void HexdumpWindow::Render() {
 void HexdumpWindow::Show() {
   ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.f, 0.f));
   auto const& winbg = ImGui::GetStyle().Colors[ImGuiCol_WindowBg];
-  ImGui::PushStyleColor(ImGui
+  ImGui::PushStyleColor(ImGuiCol_FrameBg, winbg);
+  Window::Show();
+  ImGui::PopStyleColor(1);
+  ImGui::PopStyleVar(1);
+}
+
+} // 
