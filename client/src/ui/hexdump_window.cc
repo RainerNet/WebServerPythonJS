@@ -58,4 +58,6 @@ void HexdumpWindow::Show() {
   ImGui::PopStyleVar(1);
 }
 
-} // 
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
