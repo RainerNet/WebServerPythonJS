@@ -21,4 +21,10 @@
  */
 
 #include "ui/ribbon.h"
-#incl
+#include "ui/manager.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+Manager::Manager(M
