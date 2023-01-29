@@ -27,4 +27,7 @@ namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-Manager::Manager(M
+Manager::Manager(MachineDecompiler& decompiler)
+    : decompiler_(decompiler),
+      elements_(),
+      add_queue
