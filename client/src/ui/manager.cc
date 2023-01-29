@@ -39,4 +39,8 @@ void Manager::Add(Element* elem) {
 }
 
 bool Manager::Remove(Element* elem) {
-  auto it = std::find(elements_.begin(
+  auto it = std::find(elements_.begin(), elements_.end(), elem);
+  if (it != elements_.end()) {
+    delete (*it);
+    elements_.erase(it);
+    retu
