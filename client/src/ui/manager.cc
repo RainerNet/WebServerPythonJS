@@ -35,4 +35,8 @@ Manager::Manager(MachineDecompiler& decompiler)
 }
 
 void Manager::Add(Element* elem) {
-  add_queue_.push
+  add_queue_.push_back(elem);
+}
+
+bool Manager::Remove(Element* elem) {
+  auto it = std::find(elements_.begin(
