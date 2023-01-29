@@ -43,4 +43,13 @@ bool Manager::Remove(Element* elem) {
   if (it != elements_.end()) {
     delete (*it);
     elements_.erase(it);
-    retu
+    return true;
+  }
+  return false;
+}
+
+void Manager::Show() {
+  for (auto* it : elements_) {
+    it->Show();
+  }
+  for 
