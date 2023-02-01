@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2018 github.com/jha
  *
@@ -20,42 +21,27 @@
  * IN THE SOFTWARE.
  */
 
-#include "ui/ribbon.h"
+#include "ui/modal.h"
 #include "ui/manager.h"
 
 namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-Manager::Manager(MachineDecompiler& decompiler)
-    : decompiler_(decompiler),
-      elements_(),
-      add_queue_() {
-  elements_.push_back(new Ribbon(*this));
+Modal::Modal(Manager &manager,
+    std::string const& title, ImVec2 const& default_size)
+    : open_(true),
+      Element(manager, title, default_size) {
 }
 
-void Manager::Add(Element* elem) {
-  add_queue_.push_back(elem);
-}
-
-bool Manager::Remove(Element* elem) {
-  auto it = std::find(elements_.begin(), elements_.end(), elem);
-  if (it != elements_.end()) {
-    delete (*it);
-    elements_.erase(it);
-    return true;
+void Modal::Show() {
+  ImGui::OpenPopup(id().c_str());
+  if (ImGui::BeginPopupModal(id().c_str(), &open_)) {
+    Render();
+    ImGui::EndPopup();
   }
-  return false;
-}
-
-void Manager::Show() {
-  for (auto* it : elements_) {
-    it->Show();
-  }
-  for (auto* it : add_queue_) {
-    elements_.push_back(it);
-  }
-  add_queue_.clear();
+  if (!open())
+    manager().Remove(this);
 }
 
 } // namespace ui
