@@ -1,4 +1,5 @@
 /*
  * Copyright 2018 github.com/jha
  *
- * Permission i
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this softw
