@@ -52,4 +52,10 @@ void Manager::Show() {
   for (auto* it : elements_) {
     it->Show();
   }
-  for 
+  for (auto* it : add_queue_) {
+    elements_.push_back(it);
+  }
+  add_queue_.clear();
+}
+
+} // namespace ui
