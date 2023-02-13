@@ -26,3 +26,7 @@
 #include "ui/manager.h"
 #include "ui/functions_window.h"
 #include "ui/strings_window.h"
+#include "ui/disasm_window.h"
+#include "ui/hexdump_window.h"
+#include "ui/console_window.h"
+#include "ui/ope
