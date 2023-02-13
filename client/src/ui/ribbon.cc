@@ -22,4 +22,7 @@
 
 #include <imgui.h>
 
-#includ
+#include "ui/ribbon.h"
+#include "ui/manager.h"
+#include "ui/functions_window.h"
+#include "ui/strings_window.h"
