@@ -33,4 +33,11 @@
 #include "ui/about_modal.h"
 
 namespace machine_decompiler {
-namespace clien
+namespace client {
+namespace ui {
+
+Ribbon::Ribbon(Manager& manager)
+    : Element(manager, "", ImVec2(0, 0)) {
+}
+
+void Ribbo
