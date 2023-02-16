@@ -29,4 +29,8 @@
 #include "ui/disasm_window.h"
 #include "ui/hexdump_window.h"
 #include "ui/console_window.h"
-#include "ui/ope
+#include "ui/open_file_modal.h"
+#include "ui/about_modal.h"
+
+namespace machine_decompiler {
+namespace clien
