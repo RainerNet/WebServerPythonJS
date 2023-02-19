@@ -40,4 +40,8 @@ Ribbon::Ribbon(Manager& manager)
     : Element(manager, "", ImVec2(0, 0)) {
 }
 
-void Ribbo
+void Ribbon::Render() {
+  // File
+  if (ImGui::BeginMenu("File")) {
+    if (ImGui::MenuItem("Open", "Ctrl+O")) {
+      manager().Add(
