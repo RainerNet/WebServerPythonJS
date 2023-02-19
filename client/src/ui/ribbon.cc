@@ -49,4 +49,9 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Save", "Ctrl+S")) {
 
     }
-    ImGui::E
+    ImGui::EndMenu();
+  }
+
+  // View
+  if (ImGui::BeginMenu("View")) {
+    if (ImGui::MenuItem("Functions", "Ctrl+N"
