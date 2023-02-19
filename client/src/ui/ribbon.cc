@@ -44,4 +44,9 @@ void Ribbon::Render() {
   // File
   if (ImGui::BeginMenu("File")) {
     if (ImGui::MenuItem("Open", "Ctrl+O")) {
-      manager().Add(
+      manager().Add(new OpenFileModal(manager()));
+    }
+    if (ImGui::MenuItem("Save", "Ctrl+S")) {
+
+    }
+    ImGui::E
