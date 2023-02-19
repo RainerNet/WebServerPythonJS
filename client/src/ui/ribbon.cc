@@ -54,4 +54,7 @@ void Ribbon::Render() {
 
   // View
   if (ImGui::BeginMenu("View")) {
-    if (ImGui::MenuItem("Functions", "Ctrl+N"
+    if (ImGui::MenuItem("Functions", "Ctrl+N")) {
+      manager().Add(new FunctionsWindow(manager()));
+    }
+    if (ImGui::MenuItem("Strings", "Ct
