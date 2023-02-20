@@ -57,4 +57,7 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Functions", "Ctrl+N")) {
       manager().Add(new FunctionsWindow(manager()));
     }
-    if (ImGui::MenuItem("Strings", "Ct
+    if (ImGui::MenuItem("Strings", "Ctrl+T")) {
+      manager().Add(new StringsWindow(manager()));
+    }
+    if (ImGui::
