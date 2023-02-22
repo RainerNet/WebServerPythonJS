@@ -60,4 +60,7 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Strings", "Ctrl+T")) {
       manager().Add(new StringsWindow(manager()));
     }
-    if (ImGui::
+    if (ImGui::MenuItem("Disassembly", "Ctrl+D")) {
+      manager().Add(new DisasmWindow(manager()));
+    }
+    
