@@ -72,4 +72,9 @@ void Ribbon::Render() {
     ImGui::EndMenu();
   }
 
-  // Settin
+  // Settings
+  if (ImGui::BeginMenu("Settings")) {
+    if (ImGui::MenuItem("Fonts")) {
+
+    }
+    if (ImG
