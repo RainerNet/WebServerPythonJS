@@ -63,4 +63,7 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Disassembly", "Ctrl+D")) {
       manager().Add(new DisasmWindow(manager()));
     }
-    
+    if (ImGui::MenuItem("Hexdump", "Ctrl+H")) {
+      manager().Add(new HexdumpWindow(manager()));
+    }
+    if (ImGui::MenuItem(
