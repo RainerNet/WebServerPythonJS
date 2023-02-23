@@ -66,4 +66,10 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Hexdump", "Ctrl+H")) {
       manager().Add(new HexdumpWindow(manager()));
     }
-    if (ImGui::MenuItem(
+    if (ImGui::MenuItem("Console", "Ctrl+K")) {
+      manager().Add(new ConsoleWindow(manager()));
+    }
+    ImGui::EndMenu();
+  }
+
+  // Settin
