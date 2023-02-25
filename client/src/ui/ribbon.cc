@@ -77,4 +77,12 @@ void Ribbon::Render() {
     if (ImGui::MenuItem("Fonts")) {
 
     }
-    if (ImG
+    if (ImGui::MenuItem("Proxy")) {
+
+    }
+    ImGui::EndMenu();
+  }
+
+  // Help
+  if (ImGui::BeginMenu("Help")) {
+    if (ImGui
