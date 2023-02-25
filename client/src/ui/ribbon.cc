@@ -85,4 +85,7 @@ void Ribbon::Render() {
 
   // Help
   if (ImGui::BeginMenu("Help")) {
-    if (ImGui
+    if (ImGui::MenuItem("About")) {
+      manager().Add(new AboutModal(manager()));
+    }
+    ImGui::EndMenu();
