@@ -89,3 +89,10 @@ void Ribbon::Render() {
       manager().Add(new AboutModal(manager()));
     }
     ImGui::EndMenu();
+  }
+}
+
+void Ribbon::Show() {
+  if (ImGui::BeginMainMenuBar()) {
+    Render();
+    ImGui::EndM
