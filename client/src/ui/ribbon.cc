@@ -95,4 +95,10 @@ void Ribbon::Render() {
 void Ribbon::Show() {
   if (ImGui::BeginMainMenuBar()) {
     Render();
-    ImGui::EndM
+    ImGui::EndMainMenuBar();
+  }
+}
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decomp
