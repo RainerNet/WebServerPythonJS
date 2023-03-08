@@ -101,4 +101,4 @@ void Ribbon::Show() {
 
 } // namespace ui
 } // namespace client
-} // namespace machine_decomp
+} // namespace machine_decompiler
