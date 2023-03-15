@@ -29,4 +29,11 @@ namespace machine_decompiler {
 namespace client {
 namespace ui {
 
-nam
+namespace {
+
+ImVec2 const defWinSize(256, 384);
+
+} // namespace
+
+StringsWindow::StringsWindow(Manager &manager)
+  
