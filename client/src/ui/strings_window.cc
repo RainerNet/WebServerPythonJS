@@ -22,4 +22,11 @@
 
 #include <imgui.h>
 
-#include "ui/strings_window
+#include "ui/strings_window.h"
+#include "ui/manager.h"
+
+namespace machine_decompiler {
+namespace client {
+namespace ui {
+
+nam
