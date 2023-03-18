@@ -36,4 +36,12 @@ ImVec2 const defWinSize(256, 384);
 } // namespace
 
 StringsWindow::StringsWindow(Manager &manager)
-  
+    : Window(manager, "Strings", defWinSize) {
+}
+
+void StringsWindow::Render() {
+
+}
+
+} // namespace ui
+} /
