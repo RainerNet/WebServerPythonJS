@@ -44,4 +44,5 @@ void StringsWindow::Render() {
 }
 
 } // namespace ui
-} /
+} // namespace client
+} // namespace machine_decompiler
