@@ -24,4 +24,8 @@
 
 #include <imgui.h>
 
-#i
+#include "ui/window.h"
+#include "ui/manager.h"
+
+namespace machine_decompiler {
+namespace client {
