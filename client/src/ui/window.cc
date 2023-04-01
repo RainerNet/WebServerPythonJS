@@ -36,4 +36,7 @@ namespace {
 ImVec2 const winMinSize(128, 64);
 ImVec2 const winMaxSize(10000, 10000);
 
-} // namesp
+} // namespace
+
+Window::Window(Manager& manager,
+    std::string const& title, ImVec2 const& defSiz
