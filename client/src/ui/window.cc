@@ -29,3 +29,11 @@
 
 namespace machine_decompiler {
 namespace client {
+namespace ui {
+
+namespace {
+
+ImVec2 const winMinSize(128, 64);
+ImVec2 const winMaxSize(10000, 10000);
+
+} // namesp
