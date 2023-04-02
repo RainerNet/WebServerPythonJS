@@ -39,4 +39,10 @@ ImVec2 const winMaxSize(10000, 10000);
 } // namespace
 
 Window::Window(Manager& manager,
-    std::string const& title, ImVec2 const& defSiz
+    std::string const& title, ImVec2 const& defSize)
+    : open_(true),
+      new_window_(true),
+      Element(manager, title, defSize) {
+}
+
+void W
