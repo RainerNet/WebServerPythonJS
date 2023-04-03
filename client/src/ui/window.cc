@@ -47,4 +47,7 @@ Window::Window(Manager& manager,
 
 void Window::Show() {
   if (open()) {
-    ImGui::SetNextWindowSizeConstraints(winMinSize, winMaxS
+    ImGui::SetNextWindowSizeConstraints(winMinSize, winMaxSize);
+    if (new_window())
+      ImGui::SetNextWindowSize(default_size());
+    if (ImGui::Begin(id
