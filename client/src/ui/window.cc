@@ -50,4 +50,8 @@ void Window::Show() {
     ImGui::SetNextWindowSizeConstraints(winMinSize, winMaxSize);
     if (new_window())
       ImGui::SetNextWindowSize(default_size());
-    if (ImGui::Begin(id
+    if (ImGui::Begin(id().c_str(), &open_))
+      Render();
+    ImGui::End();
+  } else {
+    manager().Remove(this
