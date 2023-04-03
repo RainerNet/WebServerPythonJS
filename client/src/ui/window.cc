@@ -45,4 +45,6 @@ Window::Window(Manager& manager,
       Element(manager, title, defSize) {
 }
 
-void W
+void Window::Show() {
+  if (open()) {
+    ImGui::SetNextWindowSizeConstraints(winMinSize, winMaxS
