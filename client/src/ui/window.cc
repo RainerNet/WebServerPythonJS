@@ -54,4 +54,10 @@ void Window::Show() {
       Render();
     ImGui::End();
   } else {
-    manager().Remove(this
+    manager().Remove(this);
+  }
+}
+
+} // namespace ui
+} // namespace client
+} // namespace machine_decompiler
